@@ -223,31 +223,7 @@
     </div>
   </div>
 
-  <script>
-    function calculate() {
-      const userAge = document.getElementById("userAge").value;
-      const spouseAge = document.getElementById("spouseAge").value;
-      const state = document.getElementById("state").value;
-
-      document.getElementById("ageConservative").textContent =
-        calculateRetirementAge(userAge, spouseAge, state, "conservative");
-
-      document.getElementById("ageNormal").textContent =
-        calculateRetirementAge(userAge, spouseAge, state, "normal");
-
-      document.getElementById("ageOptimistic").textContent =
-        calculateRetirementAge(userAge, spouseAge, state, "optimistic");
-    }
-
-    // Placeholder logic — to be fully implemented later
-    function calculateRetirementAge(
-      userAge,
-      spouseAge,
-      retirementState,
-      scenario
-    ) {
-      return Math.floor(Math.random() * 21) + 55;
-    }
-  </script>
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
